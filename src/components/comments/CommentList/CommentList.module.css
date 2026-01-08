@@ -1,0 +1,21 @@
+.list {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-md);
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: var(--spacing-xl);
+  text-align: center;
+}
+
+.empty {
+  color: var(--color-text-muted);
+}
+
+.error {
+  color: var(--color-danger);
+}

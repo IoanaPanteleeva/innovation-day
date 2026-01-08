@@ -1,0 +1,38 @@
+.page {
+  max-width: 900px;
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-xl);
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 60vh;
+}
+
+.backButton {
+  align-self: flex-start;
+}
+
+.card {
+  background-color: var(--color-bg-white);
+}
+
+.sectionTitle {
+  font-size: var(--text-2xl);
+  margin: 0 0 var(--spacing-lg) 0;
+  color: var(--color-text-dark);
+}
+
+.divider {
+  height: 1px;
+  background-color: var(--color-gray-200);
+  margin: var(--spacing-xl) 0;
+}
+
+.errorText {
+  color: var(--color-text-muted);
+  margin: var(--spacing-md) 0;
+}

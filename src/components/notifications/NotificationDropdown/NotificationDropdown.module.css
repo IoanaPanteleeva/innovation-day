@@ -1,0 +1,98 @@
+.dropdown {
+  position: absolute;
+  top: calc(100% + var(--spacing-sm));
+  right: 0;
+  width: 400px;
+  max-width: 90vw;
+  background-color: var(--color-bg-white);
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-lg);
+  z-index: 1000;
+  overflow: hidden;
+  border: 2px solid var(--color-gray-200);
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: var(--spacing-md) var(--spacing-lg);
+  border-bottom: 2px solid var(--color-gray-200);
+  background-color: var(--color-gray-100);
+}
+
+.title {
+  font-size: var(--text-lg);
+  font-weight: var(--font-semibold);
+  color: var(--color-text-dark);
+  margin: 0;
+}
+
+.markAllButton {
+  font-size: var(--text-sm);
+  color: var(--color-primary);
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: var(--spacing-xs) var(--spacing-sm);
+  border-radius: var(--radius-sm);
+  transition: background-color var(--transition-base);
+  font-weight: var(--font-medium);
+}
+
+.markAllButton:hover:not(:disabled) {
+  background-color: rgba(0, 229, 204, 0.1);
+}
+
+.markAllButton:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.list {
+  max-height: 400px;
+  overflow-y: auto;
+}
+
+.loading {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--spacing-sm);
+  padding: var(--spacing-xl);
+  color: var(--color-text-muted);
+}
+
+.empty {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: var(--spacing-xl);
+  gap: var(--spacing-md);
+  color: var(--color-text-muted);
+}
+
+.emptyIcon {
+  font-size: 48px;
+  opacity: 0.5;
+}
+
+.empty p {
+  margin: 0;
+  font-size: var(--text-sm);
+}
+
+.footer {
+  padding: var(--spacing-md) var(--spacing-lg);
+  border-top: 2px solid var(--color-gray-200);
+  background-color: var(--color-gray-100);
+}
+
+@media (max-width: 768px) {
+  .dropdown {
+    width: 100vw;
+    left: 0;
+    right: 0;
+  }
+}

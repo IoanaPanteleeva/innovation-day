@@ -1,0 +1,121 @@
+/* Design System Variables */
+:root {
+  /* Primary Colors - from screenshot */
+  --color-primary: #00E5CC;
+  --color-primary-dark: #00C4A7;
+  --color-primary-light: #33EBD5;
+  --color-primary-hover: #00B8A0;
+
+  /* Background Colors */
+  --color-bg-dark: #2C3E50;
+  --color-bg-darker: #1A252F;
+  --color-bg-light: #ECF0F1;
+  --color-bg-white: #FFFFFF;
+  --color-bg-card: #FFFFFF;
+
+  /* Text Colors */
+  --color-text-primary: #FFFFFF;
+  --color-text-secondary: #BDC3C7;
+  --color-text-dark: #2C3E50;
+  --color-text-muted: #95A5A6;
+
+  /* Status Colors */
+  --color-success: #27AE60;
+  --color-success-light: #2ECC71;
+  --color-warning: #F39C12;
+  --color-warning-light: #F1C40F;
+  --color-danger: #E74C3C;
+  --color-danger-light: #EC7063;
+  --color-info: #3498DB;
+  --color-info-light: #5DADE2;
+
+  /* Neutral Colors */
+  --color-gray-100: #F8F9FA;
+  --color-gray-200: #E9ECEF;
+  --color-gray-300: #DEE2E6;
+  --color-gray-400: #CED4DA;
+  --color-gray-500: #ADB5BD;
+  --color-gray-600: #6C757D;
+  --color-gray-700: #495057;
+  --color-gray-800: #343A40;
+  --color-gray-900: #212529;
+
+  /* Spacing */
+  --spacing-xs: 0.25rem;    /* 4px */
+  --spacing-sm: 0.5rem;     /* 8px */
+  --spacing-md: 1rem;       /* 16px */
+  --spacing-lg: 1.5rem;     /* 24px */
+  --spacing-xl: 2rem;       /* 32px */
+  --spacing-2xl: 3rem;      /* 48px */
+  --spacing-3xl: 4rem;      /* 64px */
+
+  /* Border Radius */
+  --radius-sm: 4px;
+  --radius-md: 8px;
+  --radius-lg: 12px;
+  --radius-xl: 16px;
+  --radius-full: 9999px;
+
+  /* Shadows */
+  --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+  --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+  --shadow-xl: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+  --shadow-2xl: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+
+  /* Transitions */
+  --transition-fast: 150ms ease-in-out;
+  --transition-base: 200ms ease-in-out;
+  --transition-slow: 300ms ease-in-out;
+
+  /* Z-index */
+  --z-dropdown: 1000;
+  --z-sticky: 1020;
+  --z-fixed: 1030;
+  --z-modal-backdrop: 1040;
+  --z-modal: 1050;
+  --z-popover: 1060;
+  --z-tooltip: 1070;
+
+  /* Sidebar */
+  --sidebar-width: 240px;
+  --sidebar-collapsed-width: 64px;
+
+  /* Header */
+  --header-height: 64px;
+
+  /* Fonts */
+  --font-sans: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  --font-mono: 'SF Mono', 'Monaco', 'Inconsolata', 'Fira Code',
+    'Fira Mono', 'Roboto Mono', 'Lucida Console', monospace;
+
+  /* Font Sizes */
+  --text-xs: 0.75rem;     /* 12px */
+  --text-sm: 0.875rem;    /* 14px */
+  --text-base: 1rem;      /* 16px */
+  --text-lg: 1.125rem;    /* 18px */
+  --text-xl: 1.25rem;     /* 20px */
+  --text-2xl: 1.5rem;     /* 24px */
+  --text-3xl: 1.875rem;   /* 30px */
+  --text-4xl: 2.25rem;    /* 36px */
+  --text-5xl: 3rem;       /* 48px */
+
+  /* Font Weights */
+  --font-normal: 400;
+  --font-medium: 500;
+  --font-semibold: 600;
+  --font-bold: 700;
+
+  /* Line Heights */
+  --leading-none: 1;
+  --leading-tight: 1.25;
+  --leading-normal: 1.5;
+  --leading-relaxed: 1.75;
+
+  /* Letter Spacing */
+  --tracking-tight: -0.025em;
+  --tracking-normal: 0;
+  --tracking-wide: 0.025em;
+}

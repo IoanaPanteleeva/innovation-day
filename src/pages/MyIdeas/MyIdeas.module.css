@@ -1,0 +1,27 @@
+.page {
+  max-width: 1200px;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: var(--spacing-2xl);
+}
+
+.header h1 {
+  font-size: var(--text-3xl);
+  margin-bottom: var(--spacing-xs);
+}
+
+.subtitle {
+  color: var(--color-text-muted);
+  margin: 0;
+}
+
+@media (max-width: 768px) {
+  .header {
+    flex-direction: column;
+    gap: var(--spacing-md);
+  }
+}

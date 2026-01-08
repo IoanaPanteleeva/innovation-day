@@ -1,0 +1,59 @@
+.page {
+  max-width: 900px;
+}
+
+.header {
+  margin-bottom: var(--spacing-xl);
+}
+
+.header h1 {
+  font-size: var(--text-3xl);
+  margin-bottom: var(--spacing-xs);
+}
+
+.subtitle {
+  color: var(--color-text-muted);
+  line-height: var(--leading-normal);
+  margin: 0;
+}
+
+.card {
+  background-color: var(--color-bg-white);
+  margin-bottom: var(--spacing-lg);
+}
+
+.info {
+  padding: var(--spacing-md);
+  background-color: var(--color-gray-100);
+  border-radius: var(--radius-md);
+  border-left: 4px solid var(--color-primary);
+}
+
+.infoTitle {
+  font-size: var(--text-lg);
+  font-weight: var(--font-semibold);
+  color: var(--color-text-dark);
+  margin: 0 0 var(--spacing-md) 0;
+}
+
+.infoList {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-sm);
+  margin: 0;
+  padding-left: var(--spacing-lg);
+  list-style: disc;
+}
+
+.infoList li {
+  color: var(--color-text-dark);
+  line-height: var(--leading-normal);
+}
+
+.formTitle {
+  font-size: var(--text-xl);
+  margin: 0 0 var(--spacing-lg) 0;
+  color: var(--color-text-dark);
+  padding-bottom: var(--spacing-md);
+  border-bottom: 2px solid var(--color-gray-200);
+}

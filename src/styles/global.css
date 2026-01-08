@@ -1,0 +1,210 @@
+@import './variables.css';
+
+/* Global Styles */
+body {
+  font-family: var(--font-sans);
+  color: var(--color-text-dark);
+  background-color: var(--color-bg-light);
+}
+
+/* Scrollbar Styling */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--color-gray-200);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--color-gray-400);
+  border-radius: var(--radius-full);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-gray-500);
+}
+
+/* Typography */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: var(--font-semibold);
+  line-height: var(--leading-tight);
+  color: var(--color-text-dark);
+}
+
+h1 {
+  font-size: var(--text-4xl);
+}
+
+h2 {
+  font-size: var(--text-3xl);
+}
+
+h3 {
+  font-size: var(--text-2xl);
+}
+
+h4 {
+  font-size: var(--text-xl);
+}
+
+h5 {
+  font-size: var(--text-lg);
+}
+
+h6 {
+  font-size: var(--text-base);
+}
+
+p {
+  line-height: var(--leading-normal);
+  margin-bottom: var(--spacing-md);
+}
+
+/* Links */
+a {
+  color: var(--color-primary);
+  transition: color var(--transition-base);
+}
+
+a:hover {
+  color: var(--color-primary-dark);
+}
+
+/* Focus Styles */
+*:focus-visible {
+  outline: 2px solid var(--color-primary);
+  outline-offset: 2px;
+}
+
+/* Utility Classes */
+.container {
+  width: 100%;
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 var(--spacing-lg);
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-left {
+  text-align: left;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.flex {
+  display: flex;
+}
+
+.flex-col {
+  flex-direction: column;
+}
+
+.items-center {
+  align-items: center;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.justify-between {
+  justify-content: space-between;
+}
+
+.gap-sm {
+  gap: var(--spacing-sm);
+}
+
+.gap-md {
+  gap: var(--spacing-md);
+}
+
+.gap-lg {
+  gap: var(--spacing-lg);
+}
+
+.mt-sm {
+  margin-top: var(--spacing-sm);
+}
+
+.mt-md {
+  margin-top: var(--spacing-md);
+}
+
+.mt-lg {
+  margin-top: var(--spacing-lg);
+}
+
+.mb-sm {
+  margin-bottom: var(--spacing-sm);
+}
+
+.mb-md {
+  margin-bottom: var(--spacing-md);
+}
+
+.mb-lg {
+  margin-bottom: var(--spacing-lg);
+}
+
+.p-sm {
+  padding: var(--spacing-sm);
+}
+
+.p-md {
+  padding: var(--spacing-md);
+}
+
+.p-lg {
+  padding: var(--spacing-lg);
+}
+
+.rounded {
+  border-radius: var(--radius-md);
+}
+
+.rounded-lg {
+  border-radius: var(--radius-lg);
+}
+
+.shadow {
+  box-shadow: var(--shadow-md);
+}
+
+.shadow-lg {
+  box-shadow: var(--shadow-lg);
+}
+
+/* Toast Notification Overrides */
+.Toastify__toast {
+  border-radius: var(--radius-md);
+  font-family: var(--font-sans);
+}
+
+.Toastify__toast--success {
+  background-color: var(--color-success);
+}
+
+.Toastify__toast--error {
+  background-color: var(--color-danger);
+}
+
+.Toastify__toast--warning {
+  background-color: var(--color-warning);
+}
+
+.Toastify__toast--info {
+  background-color: var(--color-info);
+}

@@ -1,0 +1,286 @@
+{
+  "users": [
+    {
+      "id": "user_1",
+      "name": "John Admin",
+      "email": "john.admin@company.com",
+      "role": "admin",
+      "department": "Management",
+      "avatar": null,
+      "createdAt": "2024-01-01T00:00:00Z"
+    },
+    {
+      "id": "user_2",
+      "name": "Jane Employee",
+      "email": "jane.employee@company.com",
+      "role": "employee",
+      "department": "Engineering",
+      "avatar": null,
+      "createdAt": "2024-01-01T00:00:00Z"
+    },
+    {
+      "id": "user_3",
+      "name": "Bob Smith",
+      "email": "bob.smith@company.com",
+      "role": "employee",
+      "department": "Marketing",
+      "avatar": null,
+      "createdAt": "2024-01-02T00:00:00Z"
+    }
+  ],
+  "topics": [
+    {
+      "id": "topic_1",
+      "title": "Product Innovation",
+      "description": "Share ideas for new product features and improvements",
+      "createdBy": "user_1",
+      "status": "active",
+      "deadline": "2024-12-31T23:59:59Z",
+      "createdAt": "2024-01-01T00:00:00Z"
+    },
+    {
+      "id": "topic_2",
+      "title": "Process Improvements",
+      "description": "Ideas to improve our internal processes and workflows",
+      "createdBy": "user_1",
+      "status": "active",
+      "deadline": "2024-06-30T23:59:59Z",
+      "createdAt": "2024-01-05T00:00:00Z"
+    },
+    {
+      "id": "topic_3",
+      "title": "Cost Reduction",
+      "description": "Suggestions for reducing operational costs",
+      "createdBy": "user_1",
+      "status": "active",
+      "deadline": "2024-09-30T23:59:59Z",
+      "createdAt": "2024-01-10T00:00:00Z"
+    }
+  ],
+  "ideas": [
+    {
+      "id": "idea_1",
+      "topicId": "topic_1",
+      "userId": "user_2",
+      "title": "Implement Dark Mode",
+      "description": "Add a dark mode theme to the application to reduce eye strain for users working in low-light environments. This would be a toggle in the settings that persists across sessions.",
+      "benefits": "Reduces eye strain, improves user experience, follows modern design trends, can reduce power consumption on OLED screens",
+      "implementation": "Use CSS variables for theming, add a theme context in React, create a toggle component in settings, store preference in localStorage",
+      "status": "pending",
+      "attachments": [],
+      "createdAt": "2024-01-15T10:30:00Z",
+      "updatedAt": "2024-01-15T10:30:00Z",
+      "reviewedBy": null,
+      "reviewedAt": null,
+      "reviewNotes": null,
+      "assignedTo": "user_1"
+    },
+    {
+      "id": "idea_2",
+      "topicId": "topic_1",
+      "userId": "user_3",
+      "title": "Mobile App Development",
+      "description": "Develop a mobile application for iOS and Android to allow users to access the platform on the go. This would include all core features with a mobile-optimized interface.",
+      "benefits": "Increases accessibility, expands user base, provides flexibility for remote work, competitive advantage",
+      "implementation": "Use React Native for cross-platform development, implement offline mode with sync, optimize UI for mobile screens",
+      "status": "approved",
+      "attachments": [],
+      "createdAt": "2024-01-16T14:20:00Z",
+      "updatedAt": "2024-01-18T09:15:00Z",
+      "reviewedBy": "user_1",
+      "reviewedAt": "2024-01-18T09:15:00Z",
+      "reviewNotes": "Excellent idea! This aligns with our Q2 roadmap. Moving forward with development."
+    },
+    {
+      "id": "idea_3",
+      "topicId": "topic_2",
+      "userId": "user_2",
+      "title": "Automated Testing Pipeline",
+      "description": "Implement comprehensive automated testing including unit tests, integration tests, and end-to-end tests. Set up CI/CD pipeline to run tests automatically on every commit.",
+      "benefits": "Reduces bugs in production, faster deployment cycles, improved code quality, better developer confidence",
+      "implementation": "Use Jest for unit tests, React Testing Library for component tests, Playwright for E2E tests, integrate with GitHub Actions",
+      "status": "under_review",
+      "attachments": [],
+      "createdAt": "2024-01-20T11:00:00Z",
+      "updatedAt": "2024-01-20T11:00:00Z",
+      "reviewedBy": "user_1",
+      "reviewedAt": null,
+      "reviewNotes": null
+    },
+    {
+      "id": "idea_4",
+      "topicId": "topic_2",
+      "userId": "user_3",
+      "title": "Weekly Team Sync Meetings",
+      "description": "Institute weekly 30-minute team synchronization meetings to improve communication and alignment across departments.",
+      "benefits": "Better team coordination, reduced miscommunication, faster problem resolution",
+      "implementation": "Schedule recurring meetings, create agenda template, designate facilitator",
+      "status": "declined",
+      "attachments": [],
+      "createdAt": "2024-01-22T08:45:00Z",
+      "updatedAt": "2024-01-23T10:30:00Z",
+      "reviewedBy": "user_1",
+      "reviewedAt": "2024-01-23T10:30:00Z",
+      "reviewNotes": "We already have daily standups that serve this purpose. Adding another meeting would reduce productive work time."
+    },
+    {
+      "id": "idea_5",
+      "topicId": "topic_3",
+      "userId": "user_2",
+      "title": "Cloud Cost Optimization",
+      "description": "Review and optimize our cloud infrastructure costs by implementing auto-scaling, using reserved instances, and removing unused resources.",
+      "benefits": "Could reduce cloud costs by 30-40%, better resource utilization, improved performance through proper scaling",
+      "implementation": "Audit current usage, implement auto-scaling policies, purchase reserved instances for predictable workloads, set up cost alerts",
+      "status": "needs_info",
+      "attachments": [],
+      "createdAt": "2024-01-25T16:10:00Z",
+      "updatedAt": "2024-01-25T16:10:00Z",
+      "reviewedBy": "user_1",
+      "reviewedAt": null,
+      "reviewNotes": null
+    }
+  ],
+  "comments": [
+    {
+      "id": "comment_1",
+      "ideaId": "idea_3",
+      "userId": "user_1",
+      "content": "Great idea! Can you provide more details on the estimated time to implement this? Also, which testing framework would you recommend?",
+      "type": "question",
+      "createdAt": "2024-01-21T09:30:00Z",
+      "updatedAt": "2024-01-21T09:30:00Z"
+    },
+    {
+      "id": "comment_2",
+      "ideaId": "idea_5",
+      "userId": "user_1",
+      "content": "Can you provide a detailed breakdown of current costs and projected savings? We need concrete numbers to evaluate this proposal.",
+      "type": "question",
+      "createdAt": "2024-01-26T10:00:00Z",
+      "updatedAt": "2024-01-26T10:00:00Z"
+    },
+    {
+      "id": "comment_3",
+      "ideaId": "idea_2",
+      "userId": "user_1",
+      "content": "Approved! We'll prioritize this for Q2. Great work on the detailed implementation plan.",
+      "type": "comment",
+      "createdAt": "2024-01-18T09:15:00Z",
+      "updatedAt": "2024-01-18T09:15:00Z"
+    }
+  ],
+  "notifications": [
+    {
+      "id": "notif_1",
+      "userId": "user_2",
+      "type": "comment",
+      "message": "John Admin commented on your idea \"Automated Testing Pipeline\"",
+      "ideaId": "idea_3",
+      "read": true,
+      "emailSent": false,
+      "createdAt": "2024-01-21T09:30:00Z"
+    },
+    {
+      "id": "notif_2",
+      "userId": "user_3",
+      "type": "status_change",
+      "message": "Your idea \"Mobile App Development\" has been approved!",
+      "ideaId": "idea_2",
+      "read": true,
+      "emailSent": true,
+      "createdAt": "2024-01-18T09:15:00Z"
+    },
+    {
+      "id": "notif_3",
+      "userId": "user_2",
+      "type": "status_change",
+      "message": "Your idea \"Automated Testing Pipeline\" is now under review",
+      "ideaId": "idea_3",
+      "read": true,
+      "emailSent": false,
+      "createdAt": "2024-01-20T11:05:00Z"
+    },
+    {
+      "id": "notif_4",
+      "userId": "user_2",
+      "type": "invitation",
+      "message": "John Admin invited you to submit ideas for \"Product Innovation\"",
+      "read": true,
+      "emailSent": false,
+      "createdAt": "2024-01-01T12:00:00Z"
+    },
+    {
+      "id": "notif_5",
+      "userId": "user_3",
+      "type": "invitation",
+      "message": "John Admin invited you to submit ideas for \"Process Improvements\"",
+      "read": true,
+      "emailSent": false,
+      "createdAt": "2024-01-05T12:00:00Z"
+    },
+    {
+      "id": "notif_6",
+      "userId": "user_2",
+      "type": "question",
+      "message": "John Admin asked a question on your idea \"Cloud Cost Optimization\"",
+      "ideaId": "idea_5",
+      "read": true,
+      "emailSent": false,
+      "createdAt": "2024-01-26T10:00:00Z"
+    },
+    {
+      "id": "notif_7",
+      "userId": "user_1",
+      "type": "comment",
+      "message": "Jane Employee submitted a new idea \"Implement Dark Mode\"",
+      "ideaId": "idea_1",
+      "read": true,
+      "emailSent": false,
+      "createdAt": "2024-01-15T10:30:00Z"
+    },
+    {
+      "id": "notif_8",
+      "userId": "user_1",
+      "type": "comment",
+      "message": "Bob Smith submitted a new idea \"Mobile App Development\"",
+      "ideaId": "idea_2",
+      "read": false,
+      "emailSent": false,
+      "createdAt": "2024-01-16T14:20:00Z"
+    },
+    {
+      "id": "notif_9",
+      "userId": "user_1",
+      "type": "comment",
+      "message": "Jane Employee submitted a new idea \"Automated Testing Pipeline\"",
+      "ideaId": "idea_3",
+      "read": true,
+      "emailSent": false,
+      "createdAt": "2024-01-20T11:00:00Z"
+    }
+  ],
+  "invitations": [
+    {
+      "id": "inv_1",
+      "topicId": "topic_1",
+      "invitedBy": "user_1",
+      "invitedUsers": [
+        "user_2",
+        "user_3"
+      ],
+      "status": "sent",
+      "createdAt": "2024-01-01T12:00:00Z"
+    },
+    {
+      "id": "inv_2",
+      "topicId": "topic_2",
+      "invitedBy": "user_1",
+      "invitedUsers": [
+        "user_2",
+        "user_3"
+      ],
+      "status": "sent",
+      "createdAt": "2024-01-05T12:00:00Z"
+    }
+  ]
+}

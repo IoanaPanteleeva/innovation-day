@@ -1,0 +1,17 @@
+.page {
+  max-width: 900px;
+}
+
+.page h1 {
+  font-size: var(--text-3xl);
+  margin-bottom: var(--spacing-sm);
+}
+
+.subtitle {
+  color: var(--color-text-muted);
+  margin-bottom: var(--spacing-2xl);
+}
+
+.card {
+  background-color: var(--color-bg-white);
+}
