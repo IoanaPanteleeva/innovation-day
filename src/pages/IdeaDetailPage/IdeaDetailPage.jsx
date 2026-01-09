@@ -59,7 +59,7 @@ const IdeaDetailPage = () => {
         <IdeaDetail idea={idea} author={author} />
       </Card>
 
-      {isAdmin() && (
+      {isAdmin() && idea.status !== 'approved' && idea.status !== 'declined' && (
         <Card padding="lg" className={styles.card}>
           <AdminReviewPanel idea={idea} />
         </Card>
