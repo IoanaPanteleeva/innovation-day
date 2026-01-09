@@ -2,7 +2,7 @@ import { NavLink } from 'react-router-dom'
 import { useAuth } from '../../../contexts/AuthContext'
 import styles from './Sidebar.module.css'
 
-const Sidebar = () => {
+const Sidebar = ({ isOpen, onClose }) => {
   const { isAdmin } = useAuth()
 
   const navItems = [
@@ -16,8 +16,19 @@ const Sidebar = () => {
     { path: '/admin', label: 'Dashboard', icon: '📊' },
   ]
 
+  const handleNavClick = () => {
+    // Close sidebar on mobile when a nav item is clicked
+    if (window.innerWidth <= 768) {
+      onClose()
+    }
+  }
+
   return (
-    <aside className={styles.sidebar}>
+    <>
+      {/* Mobile overlay */}
+      {isOpen && <div className={styles.overlay} onClick={onClose} />}
+
+      <aside className={`${styles.sidebar} ${isOpen ? styles.open : ''}`}>
       <div className={styles.logo}>
         <div className={styles.logoIcon}>
           <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -57,6 +68,7 @@ const Sidebar = () => {
                 isActive ? `${styles.navItem} ${styles.active}` : styles.navItem
               }
               end={item.path === '/'}
+              onClick={handleNavClick}
             >
               <span className={styles.navIcon}>{item.icon}</span>
               <span className={styles.navLabel}>{item.label}</span>
@@ -74,6 +86,7 @@ const Sidebar = () => {
                 className={({ isActive }) =>
                   isActive ? `${styles.navItem} ${styles.active}` : styles.navItem
                 }
+                onClick={handleNavClick}
               >
                 <span className={styles.navIcon}>{item.icon}</span>
                 <span className={styles.navLabel}>{item.label}</span>
@@ -83,6 +96,7 @@ const Sidebar = () => {
         )}
       </nav>
     </aside>
+    </>
   )
 }
 

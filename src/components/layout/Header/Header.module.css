@@ -16,6 +16,31 @@
   align-items: center;
 }
 
+.hamburger {
+  display: none;
+  width: 40px;
+  height: 40px;
+  border-radius: var(--radius-md);
+  align-items: center;
+  justify-content: center;
+  color: var(--color-text-dark);
+  background: none;
+  border: none;
+  cursor: pointer;
+  transition: all var(--transition-base);
+}
+
+.hamburger:hover {
+  background-color: var(--color-gray-100);
+  color: var(--color-primary);
+}
+
+@media (max-width: 768px) {
+  .hamburger {
+    display: flex;
+  }
+}
+
 .right {
   display: flex;
   align-items: center;
@@ -182,4 +207,19 @@
 
 .dropdownItem svg {
   color: var(--color-text-muted);
+}
+
+/* Mobile responsive */
+@media (max-width: 768px) {
+  .header {
+    padding: 0 var(--spacing-md);
+  }
+
+  .userInfo {
+    display: none;
+  }
+
+  .userName {
+    display: none;
+  }
 }

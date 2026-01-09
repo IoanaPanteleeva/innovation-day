@@ -5,7 +5,7 @@ import Badge from '../../common/Badge/Badge'
 import NotificationBell from '../../notifications/NotificationBell/NotificationBell'
 import styles from './Header.module.css'
 
-const Header = () => {
+const Header = ({ onMenuClick }) => {
   const { user, logout, isAdmin } = useAuth()
   const [showUserMenu, setShowUserMenu] = useState(false)
   const navigate = useNavigate()
@@ -17,7 +17,15 @@ const Header = () => {
 
   return (
     <header className={styles.header}>
-      <div className={styles.left}></div>
+      <div className={styles.left}>
+        <button className={styles.hamburger} onClick={onMenuClick} aria-label="Toggle menu">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+            <line x1="3" y1="6" x2="21" y2="6" />
+            <line x1="3" y1="12" x2="21" y2="12" />
+            <line x1="3" y1="18" x2="21" y2="18" />
+          </svg>
+        </button>
+      </div>
 
       <div className={styles.right}>
         <NotificationBell />
